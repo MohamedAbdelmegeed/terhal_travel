@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ترحال | Terhal — منصة السفر والرحلات</title>
+    <meta name="description" content="منصتك الأولى لحجز أفضل الرحلات المحلية، وتجارب السفاري، والأنشطة الترفيهية." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- ═══ PRELOADER ═══════════════════════════════ -->
+    <div id="preloader">
+        <div class="pre-plane">✈️</div>
+        <div class="pre-logo" id="pre-logo-text">تر<span>حال</span> | Ter<span>hal</span></div>
+        <div class="pre-bar">
+            <div class="pre-fill"></div>
+        </div>
+    </div>
+
+    <!-- ═══ NAVBAR ══════════════════════════════════ -->
+    <nav id="navbar">
+        <a href="#home" class="nav-logo" id="nav-logo-link">
+            <span data-i18n="logo_main">تر</span>
+            <span class="logo-accent" data-i18n="logo_accent">حال</span>
+        </a>
+        <ul class="nav-center">
+            <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#trips" data-i18n="nav_trips">رحلاتنا</a></li>
+            <li><a href="#features" data-i18n="nav_features">مميزاتنا</a></li>
+            <li><a href="#testi" data-i18n="nav_testi">آراء العملاء</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="lang-sw">
+                <button data-lang="ar" class="on">ع</button>
+                <button data-lang="en">EN</button>
+            </div>
+            <a href="#contact" class="nav-cta desktop" data-i18n="nav_cta">احجز الآن</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="mob-menu" id="mob-menu">
+        <a href="#home" data-i18n="nav_home">الرئيسية</a>
+        <a href="#trips" data-i18n="nav_trips">رحلاتنا</a>
+        <a href="#features" data-i18n="nav_features">مميزاتنا</a>
+        <a href="#testi" data-i18n="nav_testi">آراء العملاء</a>
+        <a href="#contact" data-i18n="nav_contact">تواصل معنا</a>
+        <div class="lang-sw">
+            <button data-lang="ar" class="on">ع</button>
+            <button data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <!-- ═══ HERO ════════════════════════════════════ -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="hero-inner">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21 4 19 2c-2-2-4-2-5.5-.5L10 5 1.8 6.2c-.5.1-.9.6-.6 1.1l1.5 2.6c.2.4.7.6 1.1.4l3.2-1.3L9 12l-8 2 2 2 4-1-1 4 2 2 2-8 3 2-1.3 3.2c-.2.4 0 .9.4 1.1l2.6 1.5c.5.3 1 0 1.1-.6z"/></svg>
+                <span data-i18n="hero_badge">منصة السفر والمغامرة</span>
+            </div>
+
+            <h1 data-i18n="hero_h1">اكتشف جمال بلدك<br>وعِش مغامرتك <em>القادمة</em></h1>
+
+            <p class="hero-sub" data-i18n="hero_sub">
+                منصتك الأولى لحجز أفضل الرحلات المحلية، وتجارب السفاري، والأنشطة الترفيهية بأسعار حصرية.
+            </p>
+
+            <div class="hero-btns">
+                <button class="btn-hero-prim" onclick="document.getElementById('trips').scrollIntoView({behavior:'smooth'})">
+        <span data-i18n="hero_btn1">استكشف الرحلات الآن</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+      </button>
+
+                <!-- Search Bar -->
+                <div class="hero-search">
+                    <div class="search-box">
+                        <div class="s-field">
+                            <span class="s-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </span>
+                            <div class="s-field-inner">
+                                <label data-i18n="s_date_lbl">التاريخ</label>
+                                <input type="date" />
+                            </div>
+                        </div>
+                        <div class="s-field">
+                            <span class="s-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+          </span>
+                            <div class="s-field-inner">
+                                <label data-i18n="s_type_lbl">نوع الرحلة</label>
+                                <select>
+              <option value="" data-i18n="s_type_lbl">نوع الرحلة</option>
+              <option data-i18n="s_type_op1">سفاري</option>
+              <option data-i18n="s_type_op2">بحرية</option>
+              <option data-i18n="s_type_op3">جبلية</option>
+              <option data-i18n="s_type_op4">ثقافية</option>
+            </select>
+                            </div>
+                        </div>
+                        <button class="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span data-i18n="s_btn">ابحث</span>
+        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-hint">
+                <span data-i18n="scroll_hint">اكتشف أكثر</span>
+                <div class="scroll-line"></div>
+            </div>
+    </section>
+
+    <!-- ═══ STATS BAR ════════════════════════════════ -->
+    <div class="stats-bar">
+        <div class="s-stat">
+            <div class="num" data-target="+5,000" data-i18n="stat1_n">+5,000</div>
+            <div class="lbl" data-i18n="stat1_l">رحلة منجزة</div>
+        </div>
+        <div class="s-div"></div>
+        <div class="s-stat">
+            <div class="num" data-target="+200" data-i18n="stat2_n">+200</div>
+            <div class="lbl" data-i18n="stat2_l">وجهة سياحية</div>
+        </div>
+        <div class="s-div"></div>
+        <div class="s-stat">
+            <div class="num" data-target="+98%" data-i18n="stat3_n">+98%</div>
+            <div class="lbl" data-i18n="stat3_l">رضا العملاء</div>
+        </div>
+        <div class="s-div"></div>
+        <div class="s-stat">
+            <div class="num" data-target="+150" data-i18n="stat4_n">+150</div>
+            <div class="lbl" data-i18n="stat4_l">مرشد متخصص</div>
+        </div>
+    </div>
+
+    <!-- ═══ FEATURES ═════════════════════════════════ -->
+    <section class="sec sec-light" id="features">
+        <div class="sec-head reveal">
+            <span class="eyebrow" data-i18n="sec_feat_ey">لماذا ترحال؟</span>
+            <h2 class="sec-title" data-i18n="sec_feat_title">مميزات تجعل رحلتك لا تُنسى</h2>
+            <p class="sec-sub" data-i18n="sec_feat_sub">نوفر لك كل ما تحتاجه لتجربة سفر استثنائية من البداية حتى العودة.</p>
+        </div>
+        <div class="features-grid">
+            <div class="f-card reveal">
+                <div class="f-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </div>
+                <h3 data-i18n="f1_title">حجز آمن وسريع</h3>
+                <p data-i18n="f1_desc">تأكيد فوري لرحلتك بضغطة زر واحدة مع ضمان استرداد كامل.</p>
+            </div>
+            <div class="f-card reveal">
+                <div class="f-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><line x1="12" y1="14" x2="12" y2="20"/></svg>
+                </div>
+                <h3 data-i18n="f2_title">مرشدين محترفين</h3>
+                <p data-i18n="f2_desc">نخبة من الأدلاء السياحيين المحليين لضمان متعتك وأمانك.</p>
+            </div>
+            <div class="f-card reveal">
+                <div class="f-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <h3 data-i18n="f3_title">أفضل الأسعار</h3>
+                <p data-i18n="f3_desc">عروض حصرية وباقات تناسب الميزانيات المختلفة بجودة لا تتنازل.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ TRIPS ════════════════════════════════════ -->
+    <section class="sec" id="trips">
+        <div class="sec-head reveal">
+            <span class="eyebrow" data-i18n="sec_trips_ey">رحلاتنا المميزة</span>
+            <h2 class="sec-title" data-i18n="sec_trips_title">اختر مغامرتك</h2>
+            <p class="sec-sub" data-i18n="sec_trips_sub">رحلات مصممة بعناية لتمنحك تجربة سفر حقيقية لا تُنسى.</p>
+        </div>
+        <div class="trips-grid">
+
+            <!-- Trip 1: Desert Safari -->
+            <div class="trip-card reveal-l">
+                <img class="trip-img" src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?w=800&q=80" alt="سفاري الواحات الغروب" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#c9a96e,#8b6914)'" />
+                <div class="trip-overlay"></div>
+                <div class="trip-body">
+                    <span class="trip-badge" data-i18n="trip1_badge">الأكثر طلباً</span>
+                    <h3 data-i18n="trip1_title">سفاري الواحات الغروب</h3>
+                    <div class="trip-includes">
+                        <span class="trip-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span data-i18n="trip1_t1">سيارات دفع رباعي</span>
+                        </span>
+                        <span class="trip-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span data-i18n="trip1_t2">مخيم بدوي</span>
+                        </span>
+                        <span class="trip-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span data-i18n="trip1_t3">رصد النجوم</span>
+                        </span>
+                    </div>
+                    <button class="btn-book" data-i18n="btn_book">احجز الآن</button>
+                </div>
+            </div>
+
+            <!-- Trip 2: Sea Trip -->
+            <div class="trip-card reveal-r">
+                <img class="trip-img" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="رحلة بحرية" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#1a6b8a,#0e3d52)'" />
+                <div class="trip-overlay"></div>
+                <div class="trip-body">
+                    <span class="trip-badge" data-i18n="trip2_badge">حصري</span>
+                    <h3 data-i18n="trip2_title">رحلة بحرية لجزيرة المرجان</h3>
+                    <div class="trip-includes">
+                        <span class="trip-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l4-8 4 4 4-4 4 8"/><path d="M2 20h20"/></svg>
+            <span data-i18n="trip2_t1">يخت فاخر</span>
+                        </span>
+                        <span class="trip-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            <span data-i18n="trip2_t2">أدوات غوص</span>
+                        </span>
+                        <span class="trip-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            <span data-i18n="trip2_t3">وجبة غداء بحرية</span>
+                        </span>
+                    </div>
+                    <button class="btn-book" data-i18n="btn_book">احجز الآن</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══ REVIEWS ════════════════════════════════════ -->
+    <section class="sec reviews-section" id="testi">
+        <div class="sec-head reveal">
+            <span class="eyebrow" data-i18n="sec_testi_ey">آراء عملائنا</span>
+            <h2 class="sec-title" data-i18n="sec_testi_title">ماذا يقولون عنّا؟</h2>
+            <p class="sec-sub" data-i18n="sec_testi_sub">آلاف المسافرين وثقوا بترحال — هذه بعض تجاربهم.</p>
+        </div>
+
+        <!-- Rating summary bar -->
+        <div class="reviews-summary reveal">
+            <div class="rs-score">
+                <span class="rs-num">4.9</span>
+                <div class="rs-stars">★★★★★</div>
+                <span class="rs-count" data-i18n="rs_count">بناءً على +1,200 تقييم</span>
+            </div>
+            <div class="rs-bars">
+                <div class="rs-bar-row"><span>5★</span>
+                    <div class="rs-bar">
+                        <div class="rs-fill" style="width:87%"></div>
+                    </div><span>87%</span></div>
+                <div class="rs-bar-row"><span>4★</span>
+                    <div class="rs-bar">
+                        <div class="rs-fill" style="width:9%"></div>
+                    </div><span>9%</span></div>
+                <div class="rs-bar-row"><span>3★</span>
+                    <div class="rs-bar">
+                        <div class="rs-fill" style="width:3%"></div>
+                    </div><span>3%</span></div>
+                <div class="rs-bar-row"><span>2★</span>
+                    <div class="rs-bar">
+                        <div class="rs-fill" style="width:1%"></div>
+                    </div><span>1%</span></div>
+                <div class="rs-bar-row"><span>1★</span>
+                    <div class="rs-bar">
+                        <div class="rs-fill" style="width:0%"></div>
+                    </div><span>0%</span></div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="reviews-carousel-wrap">
+            <div class="reviews-carousel" id="reviews-carousel">
+
+                <div class="rev-card reveal">
+                    <div class="rev-top">
+                        <div class="rev-av" style="background:linear-gradient(135deg,#E8873A,#f5a45d)">أ</div>
+                        <div class="rev-info">
+                            <h4 data-i18n="testi_name">أحمد المنصوري</h4>
+                            <span data-i18n="testi_role">مسافر متكرر</span>
+                        </div>
+                        <div class="rev-stars">★★★★★</div>
+                    </div>
+                    <p data-i18n="testi_text">كانت تجربة رحلة السفاري مع ترحال استثنائية، التنظيم دقيق جداً والخدمة فوق الممتازة.</p>
+                    <div class="rev-trip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                        <span data-i18n="trip1_title">سفاري الواحات الغروب</span>
+                    </div>
+                </div>
+
+                <div class="rev-card reveal">
+                    <div class="rev-top">
+                        <div class="rev-av" style="background:linear-gradient(135deg,#0B1F3A,#1e3d6e)">س</div>
+                        <div class="rev-info">
+                            <h4 data-i18n="rev2_name">سارة الخالدي</h4>
+                            <span data-i18n="rev2_role">مصوّرة سفر</span>
+                        </div>
+                        <div class="rev-stars">★★★★★</div>
+                    </div>
+                    <p data-i18n="rev2_text">رحلة جزيرة المرجان كانت حلم! اليخت فخم والمرشد كان محترف جداً. بالتأكيد سأكرر التجربة.</p>
+                    <div class="rev-trip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                        <span data-i18n="trip2_title">رحلة بحرية لجزيرة المرجان</span>
+                    </div>
+                </div>
+
+                <div class="rev-card reveal">
+                    <div class="rev-top">
+                        <div class="rev-av" style="background:linear-gradient(135deg,#2d6a4f,#52b788)">م</div>
+                        <div class="rev-info">
+                            <h4 data-i18n="rev3_name">محمد العتيبي</h4>
+                            <span data-i18n="rev3_role">رحّالة شغوف</span>
+                        </div>
+                        <div class="rev-stars">★★★★★</div>
+                    </div>
+                    <p data-i18n="rev3_text">من أفضل المنصات اللي تعاملت معها. الحجز سهل، والدعم سريع، والرحلة تجاوزت كل توقعاتي.</p>
+                    <div class="rev-trip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                        <span data-i18n="trip1_title">سفاري الواحات الغروب</span>
+                    </div>
+                </div>
+
+                <div class="rev-card reveal">
+                    <div class="rev-top">
+                        <div class="rev-av" style="background:linear-gradient(135deg,#7b2d8b,#b565c9)">ن</div>
+                        <div class="rev-info">
+                            <h4 data-i18n="rev4_name">نورة القحطاني</h4>
+                            <span data-i18n="rev4_role">مدوّنة سياحية</span>
+                        </div>
+                        <div class="rev-stars">★★★★★</div>
+                    </div>
+                    <p data-i18n="rev4_text">تجربة لا تُنسى مع عائلتي. الأطفال كانوا سعداء جداً بمشاهدة النجوم في المخيم البدوي.</p>
+                    <div class="rev-trip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                        <span data-i18n="trip1_title">سفاري الواحات الغروب</span>
+                    </div>
+                </div>
+
+                <div class="rev-card reveal">
+                    <div class="rev-top">
+                        <div class="rev-av" style="background:linear-gradient(135deg,#c9392c,#e8734a)">ف</div>
+                        <div class="rev-info">
+                            <h4 data-i18n="rev5_name">فيصل الدوسري</h4>
+                            <span data-i18n="rev5_role">رجل أعمال</span>
+                        </div>
+                        <div class="rev-stars">★★★★★</div>
+                    </div>
+                    <p data-i18n="rev5_text">حجزت رحلة بحرية لفريق العمل، الخدمة كانت استثنائية من البداية للنهاية. شكراً ترحال!</p>
+                    <div class="rev-trip">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                        <span data-i18n="trip2_title">رحلة بحرية لجزيرة المرجان</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Nav arrows -->
+            <button class="rev-nav rev-prev" id="rev-prev" aria-label="Previous">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+            <button class="rev-nav rev-next" id="rev-next" aria-label="Next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+        </div>
+
+        <!-- Dots -->
+        <div class="rev-dots" id="rev-dots"></div>
+
+    </section>
+
+    <!-- ═══ CONTACT ══════════════════════════════════ -->
+    <section class="sec sec-light" id="contact">
+        <div class="sec-head reveal">
+            <span class="eyebrow" data-i18n="sec_contact_ey">تواصل معنا</span>
+            <h2 class="sec-title" data-i18n="sec_contact_title">نحن هنا لمساعدتك</h2>
+            <p class="sec-sub" data-i18n="sec_contact_sub">هل لديك استفسار أو تريد حجز رحلة مخصصة؟ فريقنا جاهز لخدمتك.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start;max-width:1100px;margin:0 auto">
+
+            <!-- Info -->
+            <div class="reveal-l" style="display:flex;flex-direction:column;gap:16px">
+                <a class="contact-item" href="mailto:info@terhal.com">
+                    <div class="ci-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div>
+                        <div class="ci-lbl" data-i18n="c_email_lbl">البريد الإلكتروني</div>
+                        <div class="ci-val" data-i18n="c_email_val">info@terhal.com</div>
+                    </div>
+                </a>
+                <a class="contact-item" href="tel:+966500000000">
+                    <div class="ci-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.1 6.1l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div>
+                        <div class="ci-lbl" data-i18n="c_phone_lbl">الهاتف</div>
+                        <div class="ci-val" dir="ltr" data-i18n="c_phone_val">+966 50 000 0000</div>
+                    </div>
+                </a>
+                <div class="contact-item no-hover">
+                    <div class="ci-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <div class="ci-lbl" data-i18n="c_addr_lbl">العنوان</div>
+                        <div class="ci-val" data-i18n="c_addr_val">الرياض، المملكة العربية السعودية</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="reveal-r contact-form-card">
+                <div class="form-group">
+                    <label class="form-label" data-i18n="form_name_lbl">الاسم الكامل</label>
+                    <div class="input-wrap">
+                        <span class="input-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </span>
+                        <input id="f-name" type="text" class="form-input" data-i18n="form_name_ph" placeholder="اسمك" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" data-i18n="form_email_lbl">البريد الإلكتروني</label>
+                    <div class="input-wrap">
+                        <span class="input-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+                        <input id="f-email" type="email" class="form-input" data-i18n="form_email_ph" placeholder="بريدك@مثال.com" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" data-i18n="form_trip_lbl">الرحلة المطلوبة</label>
+                    <div class="input-wrap select-wrap">
+                        <span class="input-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+          </span>
+                        <select id="f-trip" class="form-input form-select">
+            <option value="" data-i18n="form_trip_ph">اختر رحلة…</option>
+            <option data-i18n="trip1_title">سفاري الواحات الغروب</option>
+            <option data-i18n="trip2_title">رحلة بحرية لجزيرة المرجان</option>
+          </select>
+                        <span class="select-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" data-i18n="form_msg_lbl">رسالتك</label>
+                    <div class="input-wrap textarea-wrap">
+                        <textarea id="f-msg" rows="4" class="form-input form-textarea" data-i18n="form_msg_ph" placeholder="أخبرنا عن رحلتك المثالية…"></textarea>
+                    </div>
+                </div>
+                <button id="form-btn" class="form-submit-btn">
+        <span data-i18n="form_btn">أرسل الرسالة</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ════════════════════════════════════ -->
+    <footer>
+        <div class="ft-top">
+            <div>
+                <div class="ft-logo"><span data-i18n="logo_main">تر</span><span data-i18n="logo_accent">حال</span></div>
+                <p class="ft-desc" data-i18n="ft_desc">منصتك الأولى لاستكشاف الرحلات المحلية والمغامرات السياحية.</p>
+                <div class="ft-socials">
+                    <a href="#" class="social-btn" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="ft-col">
+                <h4 data-i18n="ft_nav_t">روابط سريعة</h4>
+                <ul>
+                    <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a href="#trips" data-i18n="nav_trips">رحلاتنا</a></li>
+                    <li><a href="#features" data-i18n="nav_features">مميزاتنا</a></li>
+                    <li><a href="#testi" data-i18n="nav_testi">آراء العملاء</a></li>
+                </ul>
+            </div>
+            <div class="ft-col">
+                <h4 data-i18n="ft_contact_t">تواصل</h4>
+                <ul>
+                    <li><a href="mailto:info@terhal.com" data-i18n="c_email_val">info@terhal.com</a></li>
+                    <li><a href="tel:+966500000000" data-i18n="c_phone_val">+966 50 000 0000</a></li>
+                    <li><a href="#contact" data-i18n="c_addr_val">الرياض، المملكة العربية السعودية</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft-bottom">
+            <p data-i18n="ft_copy">© 2026 جميع الحقوق محفوظة لمنصة ترحال.</p>
+            <a href="https://mabdelmegeeeport.vercel.app/" target="_blank" rel="noopener noreferrer" style="color:#e8734a ;font-weight: 600;font-style: italic;" class="ft-dev">Developed by M.Abdelmegeed</a>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="back-top" aria-label="Back to top">↑</button>
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span class="toast-icon" id="toast-icon"></span>
+        <span id="toast-msg"></span>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
